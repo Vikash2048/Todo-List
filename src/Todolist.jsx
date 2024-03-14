@@ -1,5 +1,6 @@
 import React from 'react'
 import Additem from './components/Additem';
+import Items from './components/Items';
 
 const Todolist = () => {
   const date = new Date();
@@ -21,7 +22,7 @@ const Todolist = () => {
       <div className='detailBar'>
         <p>{date.getDate()} {months[month]}, {days[day]}</p>
       </div>
-
+      <Items/>
       <Additem/>
     </div>
   )
